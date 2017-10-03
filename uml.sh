@@ -60,7 +60,7 @@ echo 'nameserver 8.8.8.8' > /run/resolvconf/resolv.conf
 mount --bind /run/resolvconf/resolv.conf /etc/resolv.conf
 
 # Start docker daemon
-docker -d &
+docker &
 sleep 5
 
 # Use docker
